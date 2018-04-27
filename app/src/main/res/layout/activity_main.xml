@@ -47,7 +47,10 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/pin_asset" />
+            android:src="@drawable/pin_asset"
+            android:paddingEnd="@dimen/small_padding"
+            android:paddingRight="@dimen/small_padding"
+            android:paddingStart="@dimen/small_padding"/>
 
         <TextView
 
@@ -73,7 +76,10 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/web_asset" />
+            android:src="@drawable/web_asset"
+            android:paddingEnd="@dimen/small_padding"
+            android:paddingRight="@dimen/small_padding"
+            android:paddingStart="@dimen/small_padding"/>
 
         <TextView
 
@@ -98,7 +104,11 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/flag_asset" />
+            android:src="@drawable/flag_asset"
+            android:paddingEnd="@dimen/small_padding"
+            android:paddingRight="@dimen/small_padding"
+            android:paddingStart="@dimen/small_padding"
+            />
 
         <TextView
             android:layout_width="wrap_content"
