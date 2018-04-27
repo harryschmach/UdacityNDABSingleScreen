@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Udacity ND AB SingleScreen</string>
+
+    <string name="business_name">Illumina</string>
+    <string name="illumina_HQ">5200 Illumina Way, San Diego, CA 92122</string>
+    <string name="illumina_website">https://www.illumina.com/</string>
+    <string name="ilmn_description">
+        Illumina is a biotechnology company that produces
+        the instruments and reagents used to analyze genetic information. Illumina\'s mission is to
+        unlock the power of the genome (the genetic information stored inside all living things).
+        \n\nCompanies like 23 and Me use Illumina technology for their genetic testing.
+        \n\nWith offices around the world and employees dedicated to providing unparalleled accuracy
+        in determining genetic information, Illumina has become the standard for genetic sequencing
+        and array technologies.
+    </string>
+    <string name="founded_string">Founded: 1998</string>
 </resources>

@@ -6,6 +6,121 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--Image View of Business Stuff-->
+    <ImageView
+        android:id="@+id/platforms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/seqplatforms"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Business Name View-->
+    <!--Probably be cooler as an image, changed it-->
+    <ImageView
+        android:paddingTop="@dimen/small_padding"
+        android:paddingBottom="@dimen/small_padding"
+
+        android:id="@+id/business_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:adjustViewBounds="true"
+        android:paddingEnd="@dimen/small_padding"
+        android:paddingLeft="@dimen/small_padding"
+
+        android:paddingStart="@dimen/small_padding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ilmnname"
+
+        app:layout_constraintTop_toBottomOf="@+id/platforms" />
+
+    <!--Business Location View-->
+    <LinearLayout
+        android:id="@+id/business_location_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/business_name_id">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pin_asset" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/illumina_HQ"
+            app:layout_constraintTop_toBottomOf="@+id/business_name_id"
+            android:textColor="@android:color/black"
+
+            />
+    </LinearLayout>
+
+    <!--Business Website View-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/business_location_id"
+        android:id="@+id/business_web_id"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/web_asset" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoLink="web"
+            android:text="@string/illumina_website"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <!--Business Founded View-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/business_web_id"
+        android:id="@+id/founded_id"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flag_asset" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/founded_string"
+            android:textColor="@android:color/black"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/founded_id"
+        android:text="@string/ilmn_description"
+        android:paddingEnd="@dimen/small_padding"
+        android:paddingRight="@dimen/small_padding"
+        android:paddingStart="@dimen/small_padding"
+        android:paddingLeft="@dimen/small_padding"
+        android:textColor="@android:color/black"
+        />
 
 
 </android.support.constraint.ConstraintLayout>
